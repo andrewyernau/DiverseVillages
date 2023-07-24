@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+    "item": "tutorialmod:barium_block"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:barium",
+    "count": 9
+  }
+}
