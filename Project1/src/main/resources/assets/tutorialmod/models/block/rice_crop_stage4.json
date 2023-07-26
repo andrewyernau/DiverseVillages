@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/crop",
+  "parent": "minecraft:block/cross",
   "textures": {
-    "crop": "tutorialmod:block/rice_crop_stage4"
-  }
+    "cross": "tutorialmod:block/rice_crop_stage4"
+  },
+  "render_type": "cutout"
 }
