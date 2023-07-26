@@ -1,4 +1,4 @@
-package net.minecraft.world.level.block;
+package net.andrewyernau.tutorialmod.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
