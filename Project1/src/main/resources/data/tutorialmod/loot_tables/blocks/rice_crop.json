@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:rice_seeds"
+          "name": "tutorialmod:rice_seeds"
         }
       ],
       "rolls": 1.0
@@ -20,7 +20,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "minecraft:rice",
+          "block": "tutorialmod:rice",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "4"
@@ -41,10 +41,11 @@
               }
             }
           ],
-          "name": "minecraft:rice_seeds"
+          "name": "tutorialmod:rice_seeds"
         }
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "tutorialmod:blocks/rice_crop"
 }

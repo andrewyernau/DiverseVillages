@@ -25,7 +25,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class RiceCropBlock extends BushBlock implements BonemealableBlock {
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_7;
+    public static final IntegerProperty AGE = BlockStateProperties.AGE_4;
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 12.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D)};
 
     public RiceCropBlock(BlockBehaviour.Properties p_52247_) {
@@ -46,7 +46,7 @@ public class RiceCropBlock extends BushBlock implements BonemealableBlock {
     }
 
     public int getMaxAge() {
-        return 7;
+        return 4;
     }
 
     protected int getAge(BlockState p_52306_) {
@@ -157,12 +157,12 @@ public class RiceCropBlock extends BushBlock implements BonemealableBlock {
 
 
     public boolean isValidBonemealTarget(LevelReader p_256559_, BlockPos p_50898_, BlockState p_50899_, boolean p_50900_) {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isValidBonemealTarget(BlockGetter p_50897_, BlockPos p_50898_, BlockState p_50899_, boolean p_50900_) {
-        return false;
+        return true;
     }
 
     public boolean isBonemealSuccess(Level p_221045_, RandomSource p_221046_, BlockPos p_221047_, BlockState p_221048_) {
