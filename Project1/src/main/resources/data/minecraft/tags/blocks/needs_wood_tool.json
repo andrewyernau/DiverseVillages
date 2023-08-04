@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:serpentine"
+    "tutorialmod:serpentine",
+    "tutorialmod:nature_table"
   ]
 }

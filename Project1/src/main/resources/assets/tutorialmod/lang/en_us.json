@@ -11,9 +11,20 @@
   "block.tutorialmod.serpentine": "Serpentine Block",
   "item.tutorialmod.eight_ball": "Eight Ball",
   "block.tutorialmod.jumpy_block": "Jumpy Block",
+  "block.tutorialmod.nature_table": "Nature Table",
   "block.tutorialmod.barium_lamp_block": "Barium Lamp Block",
 
-  "block.tutorialmod.rice_seeds": "Rice Seeeds",
-  "block.tutorialmod.cooked_rice": "Cooked Rice",
-  "block.tutorialmod.rice": "Rice"
+  "item.tutorialmod.rice_seeds": "Rice Seeeds",
+  "item.tutorialmod.cooked_rice": "Cooked Rice",
+  "item.tutorialmod.rice": "Rice",
+
+  "entity.minecraft.villager.tutorialmod.nature_enthusiast": "Nature Enthusiast",
+
+  "key.category.tutorialmod.tutorial": "Recreactive Mod",
+  "key.category.tutorialmod.canalize": "Canalize Action",
+
+  "message.tutorialmod.canalizing": "Canalizing!",
+  "message.tutorialmod.cant_canalizing": "You can't canalize without a staff!",
+
+  "item.tutorialmod.soap_water_bucket": "Soap Water Bucket"
 }
