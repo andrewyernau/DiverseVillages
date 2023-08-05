@@ -25,6 +25,7 @@ public class BaseFluidType extends FluidType {
     private final ResourceLocation flowingTexture;
     private final ResourceLocation overlayTexture;
     private final int tintColor;
+    private final Vector3f fogColor;
 
     public ResourceLocation getStillTexture() {
         return stillTexture;
@@ -39,14 +40,16 @@ public class BaseFluidType extends FluidType {
     }
 
     public int getTintColor() {
+
         return tintColor;
     }
 
     public Vector3f getFogColor() {
+
         return fogColor;
     }
 
-    private final Vector3f fogColor;
+
 
     /**
      * Default constructor.
@@ -59,13 +62,12 @@ public class BaseFluidType extends FluidType {
      * @param fogColor
      * @param properties     the general properties of the fluid type
      */
-    public BaseFluidType( ResourceLocation stillTexture, ResourceLocation flowingTexture, ResourceLocation overlayTexture, int tintColor, Vector3f fogColor,Properties properties) {
+    public BaseFluidType(final ResourceLocation stillTexture, final ResourceLocation flowingTexture,final ResourceLocation overlayTexture, final int tintColor, final Vector3f fogColor,final Properties properties) {
         super(properties);
         this.stillTexture = stillTexture;
         this.flowingTexture = flowingTexture;
         this.tintColor = tintColor;
         this.overlayTexture = overlayTexture;
-
         this.fogColor = fogColor;
     }
     @Override
@@ -75,34 +77,36 @@ public class BaseFluidType extends FluidType {
 
             @Override
             public ResourceLocation getStillTexture() {
-                return IClientFluidTypeExtensions.super.getStillTexture();
+
+                return stillTexture;
             }
 
             @Override
             public ResourceLocation getFlowingTexture() {
-                return IClientFluidTypeExtensions.super.getFlowingTexture();
+
+                return flowingTexture;
             }
 
             @Override
             public @Nullable ResourceLocation getOverlayTexture() {
-                return IClientFluidTypeExtensions.super.getOverlayTexture();
+                return overlayTexture;
             }
             @Override
             public int getTintColor() {
-                return IClientFluidTypeExtensions.super.getTintColor();
+
+                return tintColor;
             }
 
             @Override
             public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
-                return IClientFluidTypeExtensions.super.modifyFogColor(camera, partialTick, level, renderDistance, darkenWorldAmount, fluidFogColor);
+                return fogColor;
             }
 
             @Override
             public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, FogShape shape) {
                 RenderSystem.setShaderFogStart(1f);
-                RenderSystem.setShaderFogStart(6f);
+                RenderSystem.setShaderFogEnd(24f);
             }
         });
-        super.initializeClient(consumer);
     }
 }
