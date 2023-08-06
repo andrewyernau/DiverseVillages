@@ -23,8 +23,8 @@ public class ModItems {
 
 
 
-    public static final RegistryObject<Item> EIGHT_BALL= ITEMS.register("eight_ball",
-            ()->new EightBallItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> WOODEN_STAFF= ITEMS.register("wooden_staff",
+            ()->new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)));
 
 
 

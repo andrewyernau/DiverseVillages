@@ -26,5 +26,7 @@
   "message.tutorialmod.canalizing": "Canalizing!",
   "message.tutorialmod.cant_canalizing": "You can't canalize without a staff!",
 
-  "item.tutorialmod.soap_water_bucket": "Soap Water Bucket"
+  "item.tutorialmod.soap_water_bucket": "Soap Water Bucket",
+
+  "item.tutorialmod.wooden_staff": "Wooden Staff"
 }

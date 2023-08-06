@@ -1,6 +1,7 @@
 package net.andrewyernau.tutorialmod.networking.packet;
 
 import net.andrewyernau.tutorialmod.energy.PlayerManaProvider;
+import net.andrewyernau.tutorialmod.item.ModItems;
 import net.andrewyernau.tutorialmod.networking.ModMessages;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.FriendlyByteBuf;
@@ -77,7 +78,7 @@ public class CanalizeC2SPacket {
     }
     public static boolean usingWandMainHand(ServerPlayer player){
         ItemStack mainHandItem= player.getMainHandItem();
-        return mainHandItem.getItem()== Items.STICK;
+        return mainHandItem.getItem()== ModItems.WOODEN_STAFF.get();
     }
 
 }
