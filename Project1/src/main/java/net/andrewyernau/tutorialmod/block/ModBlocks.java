@@ -26,7 +26,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS= DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
     public static final RegistryObject<Block> BARIUM_BLOCK=registerBlock("barium_block",
-            ()->new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(7f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
+            ()->new Block(BlockBehaviour.Properties.of(Material.METAL).strength(7f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
     public static final RegistryObject<Block> BARITE_STONE_ORE=registerBlock("barite_stone_ore",
             ()->new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
     public static final RegistryObject<Block> BARITE_DEEPSLATE_ORE=registerBlock("barite_deepslate_ore",
@@ -39,6 +39,10 @@ public class ModBlocks {
             ()->new BariumLampBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(3f).lightLevel(blockState->blockState.getValue(BariumLampBlock.LIT)?15:0)), ModCreativeModeTab.TUTORIAL_TAB);
     public static final RegistryObject<Block> NATURE_TABLE=registerBlock("nature_table",
             ()->new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3f)), ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> WIZARD_TABLE=registerBlock("wizard_table",
+            ()->new WizardTable(BlockBehaviour.Properties.of(Material.WOOD).strength(6f).noOcclusion()), ModCreativeModeTab.TUTORIAL_TAB);
+
     public static final RegistryObject<Block> RICE_CROP=BLOCKS.register("rice_crop",
             ()->new RiceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 

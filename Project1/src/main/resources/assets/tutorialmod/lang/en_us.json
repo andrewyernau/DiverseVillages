@@ -28,5 +28,8 @@
 
   "item.tutorialmod.soap_water_bucket": "Soap Water Bucket",
 
-  "item.tutorialmod.wooden_staff": "Wooden Staff"
+  "item.tutorialmod.wooden_staff": "Wooden Staff",
+  "block.tutorialmod.wizard_table": "Wizard table",
+  "item.tutorialmod.gloomjaw_spawn_egg": "Gloomjaw Spawn Egg"
+
 }

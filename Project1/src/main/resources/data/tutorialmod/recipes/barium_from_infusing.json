@@ -1,0 +1,11 @@
+{
+  "type": "tutorialmod:wizard_table",
+  "ingredients": [
+    {
+    "item": "tutorialmod:crushed_barite"
+    }
+  ],
+  "output": {
+    "item": "tutorialmod:barium"
+  }
+}
