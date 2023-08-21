@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "lit=true": {"model": "tutorialmod:block/barium_lamp_block_on"},
-    "lit=false": {"model": "tutorialmod:block/barium_lamp_block_off"}
-  }
-}
