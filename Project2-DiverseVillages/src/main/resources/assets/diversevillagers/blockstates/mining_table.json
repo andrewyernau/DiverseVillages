@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "diversevillagers:block/mining_table"
+    },
+    "facing=south": {
+      "model": "diversevillagers:block/mining_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "diversevillagers:block/mining_table",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "diversevillagers:block/mining_table",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "villager_found_mining_table": {
+    "subtitle": "sounds.diversevillagers.villager_found_mining_table",
+    "sounds": [
+      "diversevillagers:villager_found_mining_table"
+    ]
+  }
+}

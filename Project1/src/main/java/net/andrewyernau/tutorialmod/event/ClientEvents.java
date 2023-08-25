@@ -37,6 +37,5 @@ public class ClientEvents {
         public static void registerGuiOverlays(RegisterGuiOverlaysEvent event){
             event.registerAboveAll("mana", ManaHUDOverlay.HUD_MANA);
         }
-        }
-
+    }
 }
